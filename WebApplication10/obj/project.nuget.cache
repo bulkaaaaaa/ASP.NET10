@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "YTEEbAQk7ZL+zNWxhJbaQN9ETzfXYMbHBLoy1IEdperwunczxi6UvAaMD4clUnaoBGty/X1s2RfNSvo+mkszpw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nadez\\Downloads\\asp-lrs-lr10\\asp-lrs-lr10\\asp-lrs\\asp-lrs.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nadez\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

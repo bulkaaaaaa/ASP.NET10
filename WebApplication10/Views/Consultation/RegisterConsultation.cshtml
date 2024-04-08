@@ -1,0 +1,59 @@
+﻿@model ConsultationRequest
+
+<style>
+    .form-label {
+        color: #b71c1c;
+        display: block;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .form-control {
+        border-color: #b71c1c;
+    }
+
+    .validation-message {
+        display: block;
+        text-align: left;
+        color: blue;
+    }
+</style>
+
+<form method="post" asp-controller="Consultation" asp-action="RegisterConsultation" style="background-color: #ffebee; padding: 20px; border-radius: 5px; text-align: center;">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <h1>Привіт. :) Бажаєш зареєструватись на консультацію? Тоді заповни форму нижче, будь ласка.</h1>
+    <div class="form-group">
+        <label asp-for="FullName" class="form-label"></label>
+        <input asp-for="FullName" class="form-control" />
+        <span asp-validation-for="FullName" class="validation-message"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email" class="form-label"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="validation-message"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ConsultationDate" class="form-label"></label>
+        <input asp-for="ConsultationDate" type="date" class="form-control" />
+        <span asp-validation-for="ConsultationDate" class="validation-message"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Product" class="form-label"></label>
+        <select asp-for="Product" class="form-control">
+            <option value="">Оберіть продукт</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="C#">C#</option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="Основи">Основи</option>
+        </select>
+        <span asp-validation-for="Product" class="validation-message"></span>
+    </div>
+
+    <div style="margin-top: 20px;">
+        <button type="submit" class="btn btn-primary" style="background-color: #b71c1c; border-color: #b71c1c;">Зареєструватися</button>
+    </div>
+</form>
